@@ -1,0 +1,77 @@
+import 'package:flutter/material.dart';
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        //appbar :An app bar to display at the top of the scaffold.   
+        appBar: AppBar(
+          title: Text(
+            "First Task",
+            style: TextStyle(
+                color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),//end text
+          ),//appBar
+        ),//home
+        body:Align(
+            alignment : Alignment(-1,-0.5),
+
+             child :Text.rich(
+                 
+            TextSpan(
+                children :<TextSpan>[
+                    TextSpan(
+                        text:"Name : ",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35,color: Colors.brown,   )//end text style
+                    ),
+                    TextSpan(
+                        text:"Marian Nader \n",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize:23,color: Colors.green , )//end text style
+                    ),
+                    TextSpan(
+                        text:"Fauclty : ",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize:35,color: Colors.brown,)//end text style
+                    ),
+                    TextSpan(
+                        text:"Computer science \n",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize:23,color: Colors.green , )//end text style
+                    ),
+
+                    TextSpan(
+                        text:"Universty:",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35,color: Colors.brown)//end text style
+                    ),
+                    TextSpan(
+                        text:"Helwan University \n",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize:23,color: Colors.green , )//end text style
+                    ),
+
+                    TextSpan(
+                        text:"Address:",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35,color: Colors.brown,  )//end text style
+                    ),
+                    TextSpan(
+                        text:"Cairo",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize:23,color: Colors.green , )//end text style
+                    ),
+
+                ]
+                
+
+
+            )//end span
+            
+
+
+
+
+        )//end rich
+
+        ) 
+
+        
+           
+    ),
+  ),);
+}
+
